@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" width="280" height="180">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1d24"/>
+      <stop offset="100%" stop-color="#16191f"/>
+    </linearGradient>
+  </defs>
+  <rect width="280" height="180" rx="10" fill="url(#bg2)"/>
+  <rect width="280" height="180" rx="10" fill="none" stroke="rgba(34,211,238,0.25)" stroke-width="1"/>
+
+  <!-- Top bar -->
+  <rect x="0" y="0" width="280" height="28" rx="10" fill="#111318"/>
+  <rect x="0" y="18" width="280" height="10" fill="#111318"/>
+  <circle cx="14" cy="14" r="3.5" fill="#f87171"/>
+  <circle cx="25" cy="14" r="3.5" fill="#fbbf24"/>
+  <circle cx="36" cy="14" r="3.5" fill="#34d399"/>
+  <text x="52" y="18" font-family="monospace" font-size="8" fill="#9ca3af" letter-spacing="1">CTQ AUDIT PLATFORM v3</text>
+
+  <!-- Live badge -->
+  <circle cx="244" cy="14" r="3" fill="#34d399"/>
+  <text x="252" y="18" font-family="monospace" font-size="7" fill="#34d399">LIVE</text>
+
+  <!-- Speed stat -->
+  <rect x="10" y="35" width="80" height="38" rx="6" fill="#16191f" stroke="rgba(34,211,238,0.15)" stroke-width="0.8"/>
+  <text x="50" y="52" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#22d3ee" text-anchor="middle">2,347</text>
+  <text x="50" y="65" font-family="monospace" font-size="5.5" fill="#4b5563" text-anchor="middle">TICKETS / SEC</text>
+
+  <!-- Criteria stat -->
+  <rect x="98" y="35" width="56" height="38" rx="6" fill="#16191f" stroke="rgba(139,92,246,0.15)" stroke-width="0.8"/>
+  <text x="126" y="52" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#8b5cf6" text-anchor="middle">42</text>
+  <text x="126" y="65" font-family="monospace" font-size="5.5" fill="#4b5563" text-anchor="middle">CRITERIA</text>
+
+  <!-- Pillars stat -->
+  <rect x="162" y="35" width="50" height="38" rx="6" fill="#16191f" stroke="rgba(251,146,60,0.15)" stroke-width="0.8"/>
+  <text x="187" y="52" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#fb923c" text-anchor="middle">8</text>
+  <text x="187" y="65" font-family="monospace" font-size="5.5" fill="#4b5563" text-anchor="middle">PILLARS</text>
+
+  <!-- Score stat -->
+  <rect x="220" y="35" width="50" height="38" rx="6" fill="#16191f" stroke="rgba(52,211,153,0.15)" stroke-width="0.8"/>
+  <text x="245" y="52" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#34d399" text-anchor="middle">94%</text>
+  <text x="245" y="65" font-family="monospace" font-size="5.5" fill="#4b5563" text-anchor="middle">AVG SCORE</text>
+
+  <!-- Pillar breakdown header -->
+  <text x="10" y="89" font-family="monospace" font-size="6.5" fill="#9ca3af">PILLAR BREAKDOWN</text>
+
+  <!-- 8 mini pillar bars in 2 columns -->
+  <!-- Col 1 -->
+  <text x="10" y="102" font-family="monospace" font-size="5.5" fill="#9ca3af">RESOLUTION</text>
+  <rect x="70" y="95" width="65" height="6" rx="3" fill="#16191f"/>
+  <rect x="70" y="95" width="60" height="6" rx="3" fill="#8b5cf6"/>
+
+  <text x="10" y="115" font-family="monospace" font-size="5.5" fill="#9ca3af">COMMUNICATION</text>
+  <rect x="70" y="108" width="65" height="6" rx="3" fill="#16191f"/>
+  <rect x="70" y="108" width="55" height="6" rx="3" fill="#22d3ee"/>
+
+  <text x="10" y="128" font-family="monospace" font-size="5.5" fill="#9ca3af">EMPATHY</text>
+  <rect x="70" y="121" width="65" height="6" rx="3" fill="#16191f"/>
+  <rect x="70" y="121" width="62" height="6" rx="3" fill="#fb923c"/>
+
+  <text x="10" y="141" font-family="monospace" font-size="5.5" fill="#9ca3af">FIRST CONTACT</text>
+  <rect x="70" y="134" width="65" height="6" rx="3" fill="#16191f"/>
+  <rect x="70" y="134" width="50" height="6" rx="3" fill="#34d399"/>
+
+  <!-- Col 2 -->
+  <text x="148" y="102" font-family="monospace" font-size="5.5" fill="#9ca3af">DOCUMENTATION</text>
+  <rect x="215" y="95" width="55" height="6" rx="3" fill="#16191f"/>
+  <rect x="215" y="95" width="48" height="6" rx="3" fill="#f472b6"/>
+
+  <text x="148" y="115" font-family="monospace" font-size="5.5" fill="#9ca3af">ESCALATION</text>
+  <rect x="215" y="108" width="55" height="6" rx="3" fill="#16191f"/>
+  <rect x="215" y="108" width="52" height="6" rx="3" fill="#8b5cf6"/>
+
+  <text x="148" y="128" font-family="monospace" font-size="5.5" fill="#9ca3af">COMPLIANCE</text>
+  <rect x="215" y="121" width="55" height="6" rx="3" fill="#16191f"/>
+  <rect x="215" y="121" width="44" height="6" rx="3" fill="#22d3ee"/>
+
+  <text x="148" y="141" font-family="monospace" font-size="5.5" fill="#9ca3af">SLA ADHERENCE</text>
+  <rect x="215" y="134" width="55" height="6" rx="3" fill="#16191f"/>
+  <rect x="215" y="134" width="50" height="6" rx="3" fill="#fb923c"/>
+
+  <!-- Divider -->
+  <line x1="10" y1="150" x2="270" y2="150" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Coaching plan footer -->
+  <rect x="10" y="157" width="100" height="16" rx="5" fill="rgba(139,92,246,0.85)"/>
+  <text x="60" y="168" font-family="monospace" font-size="6.5" fill="#fff" text-anchor="middle">📋 COACHING PLAN</text>
+
+  <rect x="118" y="157" width="80" height="16" rx="5" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.3)" stroke-width="0.7"/>
+  <text x="158" y="168" font-family="monospace" font-size="6.5" fill="#22d3ee" text-anchor="middle">📈 TREND REPORT</text>
+
+  <rect x="206" y="157" width="64" height="16" rx="5" fill="rgba(52,211,153,0.12)" stroke="rgba(52,211,153,0.3)" stroke-width="0.7"/>
+  <text x="238" y="168" font-family="monospace" font-size="6.5" fill="#34d399" text-anchor="middle">⬇ EXPORT</text>
+</svg>

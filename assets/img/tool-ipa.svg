@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" width="280" height="180">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a1d24"/>
+      <stop offset="100%" stop-color="#16191f"/>
+    </linearGradient>
+    <linearGradient id="linegrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="280" height="180" rx="10" fill="url(#bg3)"/>
+  <rect width="280" height="180" rx="10" fill="none" stroke="rgba(251,146,60,0.25)" stroke-width="1"/>
+
+  <!-- Top bar -->
+  <rect x="0" y="0" width="280" height="28" rx="10" fill="#111318"/>
+  <rect x="0" y="18" width="280" height="10" fill="#111318"/>
+  <circle cx="14" cy="14" r="3.5" fill="#f87171"/>
+  <circle cx="25" cy="14" r="3.5" fill="#fbbf24"/>
+  <circle cx="36" cy="14" r="3.5" fill="#34d399"/>
+  <text x="52" y="18" font-family="monospace" font-size="8" fill="#9ca3af" letter-spacing="1">INCIDENT PATTERN ANALYSIS</text>
+
+  <!-- Anomaly count -->
+  <rect x="10" y="34" width="60" height="32" rx="6" fill="#16191f" stroke="rgba(251,146,60,0.2)" stroke-width="0.8"/>
+  <text x="40" y="48" font-family="Arial,sans-serif" font-size="13" font-weight="900" fill="#fb923c" text-anchor="middle">7</text>
+  <text x="40" y="59" font-family="monospace" font-size="5" fill="#4b5563" text-anchor="middle">ANOMALIES</text>
+
+  <!-- Pattern count -->
+  <rect x="76" y="34" width="60" height="32" rx="6" fill="#16191f" stroke="rgba(139,92,246,0.2)" stroke-width="0.8"/>
+  <text x="106" y="48" font-family="Arial,sans-serif" font-size="13" font-weight="900" fill="#8b5cf6" text-anchor="middle">12</text>
+  <text x="106" y="59" font-family="monospace" font-size="5" fill="#4b5563" text-anchor="middle">PATTERNS</text>
+
+  <!-- Major risk -->
+  <rect x="142" y="34" width="65" height="32" rx="6" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.35)" stroke-width="0.8"/>
+  <text x="174" y="48" font-family="Arial,sans-serif" font-size="13" font-weight="900" fill="#fb923c" text-anchor="middle">2</text>
+  <text x="174" y="59" font-family="monospace" font-size="5" fill="#fb923c" text-anchor="middle">MAJOR RISK</text>
+
+  <!-- Proactive -->
+  <rect x="213" y="34" width="57" height="32" rx="6" fill="rgba(52,211,153,0.1)" stroke="rgba(52,211,153,0.25)" stroke-width="0.8"/>
+  <text x="241" y="48" font-family="Arial,sans-serif" font-size="13" font-weight="900" fill="#34d399" text-anchor="middle">94%</text>
+  <text x="241" y="59" font-family="monospace" font-size="5" fill="#4b5563" text-anchor="middle">PROACTIVE</text>
+
+  <!-- Chart area -->
+  <rect x="10" y="72" width="180" height="72" rx="6" fill="#111318" stroke="rgba(255,255,255,0.04)" stroke-width="0.8"/>
+  <text x="18" y="83" font-family="monospace" font-size="5.5" fill="#9ca3af">INCIDENT VOLUME · 30 DAYS</text>
+
+  <!-- Grid lines -->
+  <line x1="10" y1="100" x2="190" y2="100" stroke="rgba(255,255,255,0.04)" stroke-width="0.7"/>
+  <line x1="10" y1="115" x2="190" y2="115" stroke="rgba(255,255,255,0.04)" stroke-width="0.7"/>
+  <line x1="10" y1="130" x2="190" y2="130" stroke="rgba(255,255,255,0.04)" stroke-width="0.7"/>
+
+  <!-- Line chart path -->
+  <polyline points="18,125 35,118 52,122 69,108 86,115 103,95 120,110 137,88 154,105 171,92 188,98"
+    fill="none" stroke="url(#linegrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Anomaly dot -->
+  <circle cx="103" cy="95" r="4" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.2"/>
+  <circle cx="137" cy="88" r="4" fill="rgba(251,146,60,0.3)" stroke="#fb923c" stroke-width="1.2"/>
+
+  <!-- Cluster blobs -->
+  <ellipse cx="103" cy="95" rx="18" ry="10" fill="rgba(139,92,246,0.08)" stroke="rgba(139,92,246,0.2)" stroke-width="0.6" stroke-dasharray="2,2"/>
+  <ellipse cx="155" cy="96" rx="22" ry="11" fill="rgba(34,211,238,0.06)" stroke="rgba(34,211,238,0.18)" stroke-width="0.6" stroke-dasharray="2,2"/>
+
+  <!-- Right panel -->
+  <rect x="196" y="72" width="74" height="72" rx="6" fill="#111318" stroke="rgba(255,255,255,0.04)" stroke-width="0.8"/>
+  <text x="204" y="83" font-family="monospace" font-size="5.5" fill="#9ca3af">TOP PATTERNS</text>
+
+  <rect x="200" y="88" width="62" height="11" rx="3" fill="rgba(139,92,246,0.15)"/>
+  <text x="204" y="97" font-family="monospace" font-size="5.5" fill="#8b5cf6">🔁 Network (x14)</text>
+
+  <rect x="200" y="103" width="62" height="11" rx="3" fill="rgba(34,211,238,0.1)"/>
+  <text x="204" y="112" font-family="monospace" font-size="5.5" fill="#22d3ee">🔁 Auth (x11)</text>
+
+  <rect x="200" y="118" width="62" height="11" rx="3" fill="rgba(251,146,60,0.1)"/>
+  <text x="204" y="127" font-family="monospace" font-size="5.5" fill="#fb923c">⚠ VPN (x9)</text>
+
+  <!-- Footer -->
+  <line x1="10" y1="151" x2="270" y2="151" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="14" y="162" font-family="monospace" font-size="5.5" fill="#4b5563">SOURCE</text>
+  <rect x="40" y="155" width="52" height="12" rx="4" fill="rgba(139,92,246,0.12)" stroke="rgba(139,92,246,0.3)" stroke-width="0.6"/>
+  <text x="66" y="164" font-family="monospace" font-size="5.5" fill="#8b5cf6" text-anchor="middle">SERVICENOW</text>
+  <rect x="98" y="155" width="44" height="12" rx="4" fill="rgba(34,211,238,0.1)" stroke="rgba(34,211,238,0.3)" stroke-width="0.6"/>
+  <text x="120" y="164" font-family="monospace" font-size="5.5" fill="#22d3ee" text-anchor="middle">NEXTHINK</text>
+
+  <rect x="196" y="155" width="74" height="12" rx="4" fill="rgba(52,211,153,0.85)"/>
+  <text x="233" y="164" font-family="monospace" font-size="5.5" fill="#000" text-anchor="middle">📋 RECOMMENDATIONS</text>
+</svg>

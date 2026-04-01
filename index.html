@@ -454,7 +454,10 @@
         </div>
       </div>
       <div class="reveal" data-delay="120">
-        <form id="contact-form" class="contact-form" novalidate>
+        <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="da29d369-3b29-4af7-9060-1b26060c9931">
+          <input type="hidden" name="subject" value="New Contact Form Submission — Yogesh Kumar Portal">
+          <input type="hidden" name="redirect" value="?sent=1#contact">
           <div class="form-row">
             <div class="form-group"><label for="cf-name">Name</label><input type="text" id="cf-name" name="name" placeholder="Jane Smith" required/></div>
             <div class="form-group"><label for="cf-org">Organisation</label><input type="text" id="cf-org" name="org" placeholder="Acme Corp"/></div>

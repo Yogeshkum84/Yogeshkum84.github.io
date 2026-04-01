@@ -209,70 +209,29 @@
   const form = document.getElementById('contact-form');
   if (!form) return;
 
-  // Create confirmation banner (hidden by default)
-  const banner = document.createElement('div');
-  banner.id = 'cf-success-banner';
-  banner.style.cssText = `
-    display: none; margin-top: 16px; padding: 14px 20px; border-radius: 8px;
-    background: rgba(34,197,94,0.15); border: 1px solid rgba(34,197,94,0.4);
-    color: #86efac; font-size: 0.95rem; text-align: center; line-height: 1.5;
-  `;
-  banner.textContent = 'Message sent! I will contact you as soon as possible based on the contact details you provided.';
-  form.after(banner);
+  // Show confirmation banner if redirected back after successful submission
+  if (new URLSearchParams(window.location.search).get('sent') === '1') {
+    const banner = document.createElement('div');
+    banner.style.cssText = `
+      margin-bottom: 16px; padding: 14px 20px; border-radius: 8px;
+      background: rgba(34,197,94,0.15); border: 1px solid rgba(34,197,94,0.4);
+      color: #86efac; font-size: 0.95rem; text-align: center; line-height: 1.5;
+    `;
+    banner.textContent = 'Message sent! I will contact you as soon as possible based on the contact details you provided.';
+    form.before(banner);
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('.btn-primary');
+    // Clean the URL without reloading
+    history.replaceState(null, '', window.location.pathname + '#contact');
+  }
 
-    // Basic validation
+  // Client-side validation before native submit
+  form.addEventListener('submit', (e) => {
     const name  = form.querySelector('#cf-name').value.trim();
     const email = form.querySelector('#cf-email').value.trim();
     const msg   = form.querySelector('#cf-message').value.trim();
     if (!name || !email || !msg) {
+      e.preventDefault();
       alert('Please fill in your Name, Email, and Message before sending.');
-      return;
-    }
-
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-
-    const payload = {
-      access_key: 'da29d369-3b29-4af7-9060-1b26060c9931',   // ← replace with your Web3Forms key
-      subject: `Contact Form: ${form.querySelector('#cf-topic').value || 'General Enquiry'} — from ${name}`,
-      from_name: name,
-      email: email,
-      organisation: form.querySelector('#cf-org').value.trim() || '—',
-      topic: form.querySelector('#cf-topic').value || '—',
-      message: msg
-    };
-
-    try {
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      const data = await res.json();
-
-      if (data.success) {
-        form.reset();
-        banner.style.display = 'block';
-        btn.textContent = '✓ Sent';
-        btn.style.background = '#22c55e';
-        setTimeout(() => {
-          banner.style.display = 'none';
-          btn.textContent = 'Send Message →';
-          btn.style.background = '';
-          btn.disabled = false;
-        }, 6000);
-      } else {
-        throw new Error(data.message || 'Submission failed');
-      }
-    } catch (err) {
-      btn.textContent = 'Send Message →';
-      btn.disabled = false;
-      alert('Sorry, there was a problem sending your message. Please try again or email yogeshkumar11@gmail.com directly.');
-      console.error('Form error:', err);
     }
   });
 })();

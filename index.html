@@ -1,149 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yogesh Kumar — Digital Workplace & Infrastructure Delivery Leader</title>
-  <meta name="description" content="18+ years of digital workplace transformation, infrastructure delivery and end-user computing leadership. XLA frameworks, CTQ tooling, and modern IT guidance by Yogesh Kumar." />
-  <meta name="theme-color" content="#020a14" />
-  <meta property="og:title" content="Yogesh Kumar — Digital Workplace Leader" />
-  <meta property="og:description" content="Frameworks, tools and guides for modern IT operations." />
-  <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2300d4ff'/><text x='16' y='23' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='16' fill='%23000'>YK</text></svg>" />
-  <style>
-    /* ── Profile Photo ── */
-    .profile-photo-wrap {
-      position: relative;
-      width: 180px;
-      height: 180px;
-      flex-shrink: 0;
-    }
-    .profile-photo-ring {
-      position: absolute;
-      inset: -4px;
-      border-radius: 50%;
-      background: conic-gradient(var(--accent), var(--accent2), var(--accent));
-      animation: spin 6s linear infinite;
-      z-index: 0;
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    .profile-photo-mask {
-      position: absolute;
-      inset: 3px;
-      border-radius: 50%;
-      background: var(--bg-0);
-      z-index: 1;
-      overflow: hidden;
-    }
-    .profile-photo-mask img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    .profile-status {
-      position: absolute;
-      bottom: 6px; right: 6px;
-      z-index: 2;
-      width: 20px; height: 20px;
-      border-radius: 50%;
-      background: #22c55e;
-      border: 3px solid var(--bg-0);
-      box-shadow: 0 0 12px rgba(34,197,94,0.6);
-    }
-    /* ── About Name Block ── */
-    .about-name-block {
-      display: flex;
-      align-items: center;
-      gap: 1.75rem;
-      margin-bottom: 2rem;
-    }
-    .about-name-text h2 {
-      font-family: var(--font-display);
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      font-weight: 800;
-      color: var(--text-1);
-      line-height: 1.1;
-      margin-bottom: 0.25rem;
-    }
-    .about-name-text .role-tag {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--accent);
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-    }
-    .about-name-text .location-tag {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 0.82rem;
-      color: var(--text-3);
-      margin-top: 0.3rem;
-    }
-    /* ── Achievement Banner ── */
-    .achievement-strip {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-      margin: 2.5rem 0 0;
-      padding: 1.5rem;
-      background: var(--bg-card);
-      border: 1px solid var(--border-soft);
-      border-radius: var(--radius-lg);
-    }
-    .ach-item {
-      text-align: center;
-      padding: 0.75rem;
-    }
-    .ach-val {
-      font-family: var(--font-display);
-      font-size: 1.85rem;
-      font-weight: 800;
-      color: var(--accent);
-      line-height: 1;
-      margin-bottom: 5px;
-    }
-    .ach-label {
-      font-family: var(--font-mono);
-      font-size: 0.67rem;
-      color: var(--text-3);
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      line-height: 1.3;
-    }
-    @media(max-width:700px){
-      .achievement-strip { grid-template-columns: 1fr 1fr; }
-      .about-name-block { flex-direction: column; align-items: flex-start; gap: 1rem; }
-    }
-    /* ── Cert chips ── */
-    .cert-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1.5rem;
-    }
-    .cert-chip {
-      padding: 0.3rem 0.75rem;
-      background: var(--bg-2);
-      border: 1px solid var(--border-soft);
-      border-radius: 99px;
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      color: var(--text-2);
-      letter-spacing: 0.5px;
-    }
-  </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yogesh Kumar — Digital Workplace &amp; Infrastructure Leader</title>
+  <meta name="description" content="Modern workplace IT guidance, frameworks, tools and accelerators. 18+ years in digital workplace and infrastructure delivery."/>
+  <meta name="theme-color" content="#0d0e12"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%238b5cf6'/><text x='16' y='23' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='16' fill='%23fff'>YK</text></svg>"/>
 </head>
 <body>
 
 <canvas id="bg-canvas"></canvas>
 
-<!-- ═══ NAVIGATION ═══════════════════════════════════════════ -->
-<nav id="navbar" role="navigation" aria-label="Main navigation">
-  <a href="#hero" class="nav-logo" aria-label="Yogesh Kumar home">
-    <div class="nav-logo-badge" aria-hidden="true">YK</div>
+<!-- NAV -->
+<nav id="navbar" role="navigation">
+  <a href="#hero" class="nav-logo">
+    <div class="nav-logo-badge">YK</div>
     Yogesh Kumar
   </a>
   <ul class="nav-links" role="list">
@@ -153,59 +26,47 @@
     <li><a href="#blog">Insights</a></li>
     <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
   </ul>
-  <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+  <button class="nav-hamburger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- ═══ HERO ═══════════════════════════════════════════════════ -->
-<section id="hero" aria-label="Introduction">
+<!-- HERO -->
+<section id="hero">
   <div class="container">
     <div class="hero-inner">
-
       <div class="hero-content">
-        <div class="hero-tag">
-          Available for Advisory &amp; Consulting
-        </div>
-
-        <h1 class="hero-name">
-          Yogesh<br>
-          <span class="accent-word">Kumar</span>
-        </h1>
-
+        <div class="hero-tag">Modern Workplace IT · Advisory &amp; Guidance</div>
+        <h1 class="hero-name">Yogesh<br><span class="accent-word">Kumar</span></h1>
         <p class="hero-title">
-          <span id="typed-text"></span><span style="color:var(--accent);animation:blink 0.9s step-end infinite">|</span>
+          <span id="typed-text"></span><span style="color:var(--cyan);animation:pulse 0.9s step-end infinite">|</span>
         </p>
-
         <p class="hero-desc">
-          Transformational IT leader with 18+ years driving digital workplace services,
-          infrastructure delivery, and end-user computing across global enterprises.
-          Building proactive, automation-first support models that eliminate manual effort
-          and deliver measurable outcomes.
+          18+ years shaping digital workplace strategy, infrastructure delivery, and intelligent
+          IT operations across global enterprises. This portal shares the frameworks, tools, and
+          perspectives I've developed — so your organisation can move faster, work smarter, and
+          stay ahead of how IT support is evolving.
         </p>
-
         <div class="hero-actions">
           <a href="#frameworks" class="btn-primary">Explore Frameworks →</a>
-          <a href="#tools" class="btn-secondary">View Tools &amp; Accelerators</a>
+          <a href="#tools" class="btn-secondary">View Tools</a>
         </div>
-
         <div class="hero-stats">
           <div class="stat-item">
             <div class="stat-num"><span data-count="18" data-suffix="+">0+</span></div>
             <div class="stat-label">Years in IT</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num"><span data-count="70" data-suffix="K+">0K+</span></div>
+            <div class="stat-num"><span data-count="70" data-suffix="K+">0</span></div>
             <div class="stat-label">Endpoints Managed</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num">4.7<span style="color:var(--accent);">/5</span></div>
+            <div class="stat-num">4.7<span>/5</span></div>
             <div class="stat-label">User Satisfaction</div>
           </div>
         </div>
       </div>
 
-      <!-- Hero Visual Card -->
       <div class="hero-visual" aria-hidden="true">
         <div class="hero-card">
           <div class="hero-card-header">
@@ -232,61 +93,58 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ═══ ABOUT ════════════════════════════════════════════════ -->
-<section id="about" aria-label="About Yogesh Kumar">
+<!-- ABOUT -->
+<section id="about">
   <div class="container section-wrap">
     <div class="about-grid">
 
-      <!-- Left: Bio + Photo -->
+      <!-- Left: Bio -->
       <div class="about-text reveal">
         <p class="section-label">About Me</p>
 
-        <!-- Name + Photo block -->
         <div class="about-name-block">
           <div class="profile-photo-wrap">
             <div class="profile-photo-ring"></div>
             <div class="profile-photo-mask">
-              <img src="assets/img/profile.png" alt="Yogesh Kumar" />
+              <img src="assets/img/profile.png" alt="Yogesh Kumar"/>
             </div>
-            <div class="profile-status" title="Available"></div>
+            <div class="profile-status"></div>
           </div>
           <div class="about-name-text">
             <h2>Yogesh Kumar</h2>
-            <div class="role-tag">Digital Workplace &amp; Infrastructure Leader</div>
+            <div class="role-tag">Service Delivery Manager · TCS</div>
             <div class="location-tag">📍 Slough, United Kingdom</div>
           </div>
         </div>
 
         <p>
-          I'm a <strong>Service Delivery Manager at Tata Consultancy Services</strong>, leading
-          infrastructure and digital workplace transformation for a major UK airline and global clients.
-          With 18+ years of progressive experience, I build proactive, automation-first support models
-          that eliminate manual effort, accelerate self-service adoption, and drive measurable cost savings.
+          I run this portal as a <strong>practical knowledge hub</strong> for IT leaders navigating
+          modern workplace transformation. The frameworks here are battle-tested across global
+          enterprises — not assembled from slide decks.
         </p>
         <p>
-          My work spans from governing multi-regional teams (50+ FTEs) and managing multimillion-pound
-          engagements, to personally building <strong>AI-powered dashboards</strong> and intelligent
-          audit platforms. I translate strategy into operational reality — and operational pain into
-          elegant tooling.
+          My day job is leading infrastructure and digital workplace delivery at
+          <strong>Tata Consultancy Services</strong>, in the ITIS practice within the
+          Travel, Transportation &amp; Hospitality (TTH) domain — managing multi-regional
+          teams across UK, India and Europe for a major UK airline and global clients.
         </p>
         <p>
-          This portal is my working knowledge base: frameworks I've developed and validated, tools
-          I've built for real environments, and perspectives shaped by frontline delivery at scale.
+          The tools on this site are ones I've actually built and run in production.
+          The guides are written from delivery experience. Everything here is designed
+          to be <strong>immediately actionable</strong> — not theoretical.
         </p>
 
         <ul class="expertise-list">
           <li>Digital Workplace Transformation &amp; EUC Delivery</li>
           <li>Endpoint Management — Intune, SCCM, JAMF, Azure Virtual Desktop</li>
-          <li>Experience Level Agreement (XLA) Design &amp; Governance</li>
-          <li>Automation &amp; Self-Service Strategy (Power Platform, ServiceNow)</li>
-          <li>IT Quality Management &amp; CTQ Frameworks</li>
+          <li>Experience Level Agreements (XLA) Design &amp; Governance</li>
+          <li>Automation &amp; Self-Service Strategy via Power Platform &amp; ServiceNow</li>
+          <li>IT Quality Frameworks — CTQ Auditing at scale</li>
           <li>M365 Copilot Adoption &amp; AI Workplace Integration</li>
-          <li>Vendor, Contract &amp; RFP Management</li>
         </ul>
 
         <div class="cert-chips">
@@ -294,105 +152,83 @@
           <span class="cert-chip">Prince2</span>
           <span class="cert-chip">SCCM 2012</span>
           <span class="cert-chip">SCCM 2007</span>
-          <span class="cert-chip">M365 Copilot</span>
+          <span class="cert-chip">MS Copilot Certified</span>
         </div>
 
-        <!-- Key Achievement Strip -->
         <div class="achievement-strip">
           <div class="ach-item">
-            <div class="ach-val">40%</div>
-            <div class="ach-label">Reduction in<br>manual tasks</div>
+            <div class="ach-val v">40%</div>
+            <div class="ach-label">Manual task<br>reduction</div>
           </div>
           <div class="ach-item">
-            <div class="ach-val">30%</div>
+            <div class="ach-val c">30%</div>
             <div class="ach-label">Faster incident<br>resolution</div>
           </div>
           <div class="ach-item">
-            <div class="ach-val">35%</div>
-            <div class="ach-label">Workflow<br>streamlined</div>
+            <div class="ach-val a">35%</div>
+            <div class="ach-label">Workflow<br>efficiency gain</div>
           </div>
           <div class="ach-item">
-            <div class="ach-val">15%</div>
+            <div class="ach-val g">15%</div>
             <div class="ach-label">Service excellence<br>improvement</div>
           </div>
         </div>
       </div>
 
-      <!-- Right: Career Timeline -->
-      <div class="about-timeline reveal" data-delay="150">
-        <p class="section-label" style="margin-bottom:1.75rem">Career Timeline</p>
+      <!-- Right: Condensed Career Timeline -->
+      <div class="reveal" data-delay="150">
+        <p class="section-label" style="margin-bottom:1.75rem">Career Progression</p>
 
         <div class="timeline">
 
           <div class="timeline-item">
-            <div class="timeline-date">Sep 2023 — Present</div>
-            <div class="timeline-role">Service Delivery Manager</div>
-            <div class="timeline-org">Tata Consultancy Services · Luton, UK</div>
+            <div class="timeline-phase phase-sdm">Service Delivery Manager</div>
+            <div class="timeline-years">4+ <em>years · 2021–Present</em></div>
+            <div class="timeline-title">ITIS Practice · TTH Domain, TCS</div>
+            <div class="timeline-context">UK · Multi-regional delivery across UK, India &amp; Europe</div>
             <div class="timeline-desc">
-              Leading infrastructure and digital workplace transformation for a major UK airline.
-              Spearheading governance frameworks, automation-driven service streams, TechBar operations
-              across UK, India and Europe, and EUC / Amazon Connect / Power Platform delivery.
+              Leading infrastructure and digital workplace transformation for major airline and
+              global clients. Driving automation-first delivery, TechBar operations, and
+              governance frameworks that shift support from reactive to proactive.
+              Endpoint estate: Intune, SCCM, JAMF, Azure Virtual Desktop, Power Platform,
+              Amazon Connect.
             </div>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-date">Jan 2021 — Sep 2023</div>
-            <div class="timeline-role">Service Delivery Manager</div>
-            <div class="timeline-org">Tata Consultancy Services · United Kingdom</div>
+            <div class="timeline-phase phase-lead">Service Delivery Lead</div>
+            <div class="timeline-years">5 <em>years · 2016–2021</em></div>
+            <div class="timeline-title">End User Services · Global Shipping Enterprise, TCS</div>
+            <div class="timeline-context">London, UK · 70,000+ endpoints across 140+ countries</div>
             <div class="timeline-desc">
-              Led enterprise-wide Workplace Services for endpoint management, security, and compliance.
-              Managed Intune, SCCM, JAMF, GPO, Azure Virtual Desktop, vulnerability management, and
-              application packaging across the endpoint estate.
+              Global digital workplace delivery at scale — 70K+ endpoints, 140+ countries.
+              Achieved 40% reduction in manual tasks, 30% faster incident resolution, and
+              4.7/5 user satisfaction through automation and shift-left self-service strategies.
             </div>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-date">May 2016 — Jul 2021</div>
-            <div class="timeline-role">Service Delivery Lead — End User Services</div>
-            <div class="timeline-org">Tata Consultancy Services · London, UK</div>
+            <div class="timeline-phase phase-tl">Team Leader</div>
+            <div class="timeline-years">2 <em>years · 2014–2016</em></div>
+            <div class="timeline-title">Workplace Services · TCS</div>
+            <div class="timeline-context">Gurgaon, India · L2/L3 offshore delivery</div>
             <div class="timeline-desc">
-              Global digital workplace delivery for a leading shipping enterprise — 70,000+ endpoints
-              across 140+ countries. Delivered 40% manual task reduction, 30% faster incident resolution,
-              and 4.7/5 user satisfaction through automation and shift-left strategies.
+              Led offshore team providing enterprise workstation support. Technical ownership of
+              SCCM, EPO, EEPC, GPO and application packaging — building the operational
+              foundation for future delivery leadership.
             </div>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-date">Apr 2014 — May 2016</div>
-            <div class="timeline-role">Service Delivery Lead — Workplace Services</div>
-            <div class="timeline-org">Tata Consultancy Services · Gurgaon, India</div>
+            <div class="timeline-phase phase-eng">Engineer</div>
+            <div class="timeline-years">7 <em>years · 2007–2014</em></div>
+            <div class="timeline-title">Dell · Maersk · Hewlett-Packard</div>
+            <div class="timeline-context">India · Application packaging, virtualisation, migrations</div>
             <div class="timeline-desc">
-              Managed a 30+ member offshore team for L2/L3 enterprise workstation support.
-              Technical ownership of SCCM, EPO, EEPC, Right Fax, GPO and application packaging.
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">Feb 2012 — Mar 2014</div>
-            <div class="timeline-role">Service Delivery Lead</div>
-            <div class="timeline-org">Hewlett-Packard · Pune, India</div>
-            <div class="timeline-desc">
-              Application packaging service delivery, end-to-end application lifecycle management,
-              and WPS project coordination as regional SPOC.
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">Jun 2009 — Jan 2012</div>
-            <div class="timeline-role">Team Leader / Service Owner — App Packaging</div>
-            <div class="timeline-org">Maersk Global Service Centres · Pune, India</div>
-            <div class="timeline-desc">
-              End-to-end ownership of Application Packaging service and Windows Migration programme.
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-date">Aug 2007 — Jun 2009</div>
-            <div class="timeline-role">Software Engineer Analyst</div>
-            <div class="timeline-org">Dell · India</div>
-            <div class="timeline-desc">
-              Application repackaging, virtualisation, and ACR for Windows XP and Vista.
-              Contributed to automation tooling initiatives.
+              Started as a software engineer at Dell, progressing through Maersk (owned
+              Application Packaging service and Windows Migration programme) and HP
+              (application lifecycle management, SPOC for client region). Built the
+              technical depth that underpins all subsequent delivery leadership.
             </div>
           </div>
 
@@ -403,8 +239,8 @@
   </div>
 </section>
 
-<!-- ═══ FRAMEWORKS ════════════════════════════════════════════ -->
-<section id="frameworks" aria-label="IT Frameworks and Guides">
+<!-- FRAMEWORKS -->
+<section id="frameworks">
   <div class="container section-wrap">
     <div class="reveal">
       <p class="section-label">Knowledge Hub</p>
@@ -417,89 +253,65 @@
 
     <div class="frameworks-grid">
 
-      <div class="fw-card reveal" data-delay="0">
-        <div class="fw-icon fw-icon-cyan">📐</div>
+      <div class="fw-card c1 reveal" data-delay="0">
+        <div class="fw-icon i1">📐</div>
         <div class="fw-tag">XLA · Employee Experience</div>
         <h3 class="fw-title">Experience Level Agreements</h3>
-        <p class="fw-desc">
-          Move beyond SLA metrics. Covers XLA design principles, the five experience pillars,
-          and validated scoring models aligned to Gartner, Nexthink, HappySignals and the
-          XLA Institute — plus rollout playbooks for enterprise IT teams.
-        </p>
+        <p class="fw-desc">Move beyond SLA metrics. Covers XLA design, the five experience pillars, and scoring models aligned to Gartner, Nexthink, HappySignals and the XLA Institute — plus rollout playbooks for enterprise IT teams.</p>
         <div class="fw-links">
           <a href="#" class="fw-link">Read Guide →</a>
           <a href="#tools" class="fw-link">XLA Dashboard</a>
         </div>
       </div>
 
-      <div class="fw-card reveal" data-delay="80">
-        <div class="fw-icon fw-icon-purple">🎯</div>
+      <div class="fw-card c2 reveal" data-delay="80">
+        <div class="fw-icon i2">🎯</div>
         <div class="fw-tag">CTQ · Quality Management</div>
         <h3 class="fw-title">Critical to Quality in IT Support</h3>
-        <p class="fw-desc">
-          A 42-criteria quality framework across 8 pillars for auditing IT support tickets.
-          Includes scoring methodology, coaching plan generation, and trend analytics to
-          systematically improve agent performance at scale.
-        </p>
+        <p class="fw-desc">A 42-criteria quality framework across 8 pillars for auditing IT support tickets. Includes scoring methodology, coaching plan generation, and trend analytics to systematically improve support quality at scale.</p>
         <div class="fw-links">
           <a href="#" class="fw-link">Read Guide →</a>
-          <a href="#tools" class="fw-link">CTQ Audit Platform</a>
+          <a href="#tools" class="fw-link">CTQ Platform</a>
         </div>
       </div>
 
-      <div class="fw-card reveal" data-delay="160">
-        <div class="fw-icon fw-icon-amber">🤖</div>
+      <div class="fw-card c3 reveal" data-delay="160">
+        <div class="fw-icon i3">🤖</div>
         <div class="fw-tag">AI Adoption · Microsoft 365</div>
         <h3 class="fw-title">Copilot Adoption Framework</h3>
-        <p class="fw-desc">
-          A structured approach to rolling out M365 Copilot at enterprise scale — from readiness
-          assessment and champion networks to usage tracking via Viva Insights and Admin Centre
-          reporting dashboards.
-        </p>
+        <p class="fw-desc">A structured approach to rolling out M365 Copilot at enterprise scale — readiness assessment, champion networks, usage tracking via Viva Insights, and dashboard reporting for IT leaders.</p>
         <div class="fw-links">
           <a href="#" class="fw-link">Read Guide →</a>
           <a href="#tools" class="fw-link">Adoption Dashboard</a>
         </div>
       </div>
 
-      <div class="fw-card reveal" data-delay="240">
-        <div class="fw-icon fw-icon-green">🔮</div>
+      <div class="fw-card c4 reveal" data-delay="240">
+        <div class="fw-icon i4">🔮</div>
         <div class="fw-tag">AIOps · Incident Intelligence</div>
         <h3 class="fw-title">Incident Pattern Analysis</h3>
-        <p class="fw-desc">
-          Integrating ServiceNow and Nexthink telemetry for proactive IT operations. Covers
-          K-Means clustering for recurring incident detection, anomaly scoring via IsolationForest,
-          Pearson correlation analysis, and major incident prediction signals.
-        </p>
+        <p class="fw-desc">Integrating ServiceNow and Nexthink telemetry for proactive IT ops. K-Means clustering for recurring incident detection, anomaly scoring, Pearson correlation, and major incident prediction signals.</p>
         <div class="fw-links">
           <a href="#" class="fw-link">Read Guide →</a>
           <a href="#tools" class="fw-link">IPA Platform</a>
         </div>
       </div>
 
-      <div class="fw-card reveal" data-delay="320">
-        <div class="fw-icon fw-icon-cyan">🖥️</div>
+      <div class="fw-card c1 reveal" data-delay="320">
+        <div class="fw-icon i1">🖥️</div>
         <div class="fw-tag">EUC · Endpoint Strategy</div>
         <h3 class="fw-title">Modern Endpoint Management</h3>
-        <p class="fw-desc">
-          A practical guide to enterprise endpoint management — covering Intune, SCCM, JAMF
-          and Azure Virtual Desktop in hybrid environments. Device lifecycle strategy,
-          vulnerability management, and application packaging blueprints.
-        </p>
+        <p class="fw-desc">Practical guide to enterprise endpoint management in hybrid environments — Intune, SCCM, JAMF, and Azure Virtual Desktop. Device lifecycle strategy, vulnerability management, and application packaging blueprints.</p>
         <div class="fw-links">
           <a href="#" class="fw-link">Read Guide →</a>
         </div>
       </div>
 
-      <div class="fw-card reveal" data-delay="400">
-        <div class="fw-icon fw-icon-purple">📋</div>
-        <div class="fw-tag">Strategy · Shift-Left & Self-Service</div>
+      <div class="fw-card c2 reveal" data-delay="400">
+        <div class="fw-icon i2">📋</div>
+        <div class="fw-tag">Strategy · Shift-Left &amp; Self-Service</div>
         <h3 class="fw-title">Proactive Support Model Design</h3>
-        <p class="fw-desc">
-          A strategic blueprint for transitioning from reactive to proactive IT support —
-          shift-left strategy, self-service design, TechBar operations, automation
-          pipeline architecture and governance frameworks for multi-regional teams.
-        </p>
+        <p class="fw-desc">Blueprint for transitioning from reactive to proactive IT support — shift-left strategy, self-service design, TechBar operations, automation pipeline architecture, and governance for multi-regional delivery.</p>
         <div class="fw-links">
           <a href="#" class="fw-link">Read Guide →</a>
         </div>
@@ -509,8 +321,8 @@
   </div>
 </section>
 
-<!-- ═══ TOOLS ════════════════════════════════════════════════ -->
-<section id="tools" aria-label="Tools and Accelerators">
+<!-- TOOLS -->
+<section id="tools">
   <div class="container section-wrap">
     <div class="reveal">
       <p class="section-label">Built for IT Teams</p>
@@ -523,23 +335,17 @@
 
     <div class="tools-featured">
 
-      <!-- Featured -->
       <div class="tool-card featured reveal" data-delay="0">
         <div>
           <div class="tool-badge badge-live">Live Tool</div>
           <h3 class="tool-title">XLA Dashboard v4</h3>
           <p class="tool-subtitle">Experience Level Agreement Scoring Platform</p>
-          <p class="tool-desc">
-            A fully interactive scoring dashboard validated against five industry frameworks —
-            Gartner, Nexthink, HappySignals, IBM, and the XLA Institute. Features five
-            experience pillars, renormalised scoring, month selector, live data input,
-            password protection, and Excel/print export. Real data pre-loaded.
-          </p>
+          <p class="tool-desc">Fully interactive scoring dashboard validated against five industry frameworks — Gartner, Nexthink, HappySignals, IBM, and the XLA Institute. Five experience pillars, renormalised scoring, month selector, live data input, password protection, and Excel/print export.</p>
           <div class="tool-stack">
             <span class="stack-tag">HTML/CSS/JS</span>
             <span class="stack-tag">Excel Export</span>
             <span class="stack-tag">Offline-Ready</span>
-            <span class="stack-tag">Password Protected</span>
+            <span class="stack-tag">No Dependencies</span>
           </div>
           <div class="tool-actions">
             <a href="#" class="btn-primary">View Demo →</a>
@@ -547,22 +353,10 @@
           </div>
         </div>
         <div class="tool-metric-grid">
-          <div class="tool-metric">
-            <div class="metric-val">5</div>
-            <div class="metric-label">Pillars</div>
-          </div>
-          <div class="tool-metric">
-            <div class="metric-val">5</div>
-            <div class="metric-label">Frameworks</div>
-          </div>
-          <div class="tool-metric">
-            <div class="metric-val">v4</div>
-            <div class="metric-label">Version</div>
-          </div>
-          <div class="tool-metric">
-            <div class="metric-val">0</div>
-            <div class="metric-label">Dependencies</div>
-          </div>
+          <div class="tool-metric"><div class="metric-val">5</div><div class="metric-label">Pillars</div></div>
+          <div class="tool-metric"><div class="metric-val">5</div><div class="metric-label">Frameworks</div></div>
+          <div class="tool-metric"><div class="metric-val">v4</div><div class="metric-label">Version</div></div>
+          <div class="tool-metric"><div class="metric-val">0</div><div class="metric-label">Dependencies</div></div>
         </div>
       </div>
 
@@ -570,16 +364,10 @@
         <div class="tool-badge badge-tool">Audit Platform</div>
         <h3 class="tool-title">CTQ Audit Platform v3</h3>
         <p class="tool-subtitle">IT Support Ticket Quality Auditor</p>
-        <p class="tool-desc">
-          Two-component architecture: Python HTTP server with pre-compiled regexes
-          scoring <strong>2,300+ tickets/sec</strong>, plus a pure HTML/JS dashboard.
-          42 CTQ criteria across 8 pillars, automated coaching plans, trend tracking,
-          and exportable audit reports.
-        </p>
+        <p class="tool-desc">Python server + HTML dashboard scoring 2,300+ tickets/sec across 42 CTQ criteria and 8 pillars. Generates automated coaching plans, trend tracking, and exportable audit reports.</p>
         <div class="tool-stack">
           <span class="stack-tag">Python</span>
           <span class="stack-tag">HTML/JS</span>
-          <span class="stack-tag">localhost:5000</span>
           <span class="stack-tag">Offline</span>
         </div>
         <div class="tool-actions">
@@ -592,12 +380,7 @@
         <div class="tool-badge badge-tool">AIOps Platform</div>
         <h3 class="tool-title">Incident Pattern Analysis (IPA)</h3>
         <p class="tool-subtitle">ServiceNow + Nexthink Intelligence Engine</p>
-        <p class="tool-desc">
-          Single-file HTML dashboard with Python backend. K-Means clustering for
-          recurring incident detection, IsolationForest anomaly detection, Pearson
-          correlation, and a proactive recommendations engine consuming live
-          ServiceNow and Nexthink NQL telemetry.
-        </p>
+        <p class="tool-desc">HTML dashboard with Python backend. K-Means clustering for recurring incident detection, IsolationForest anomaly detection, Pearson correlation, and proactive recommendations from live ServiceNow and Nexthink NQL telemetry.</p>
         <div class="tool-stack">
           <span class="stack-tag">Python</span>
           <span class="stack-tag">scikit-learn</span>
@@ -614,16 +397,11 @@
         <div class="tool-badge badge-app">Power BI · M365</div>
         <h3 class="tool-title">Copilot Adoption Dashboard</h3>
         <p class="tool-subtitle">M365 Copilot Usage &amp; Readiness Tracker</p>
-        <p class="tool-desc">
-          Power BI and HTML dashboard consuming Admin Centre CSV exports and Viva
-          Insights data. Tracks active user counts, usage depth, readiness scores,
-          and org-level adoption segmentation — built for enterprise M365 estates.
-        </p>
+        <p class="tool-desc">Power BI and HTML dashboard consuming Admin Centre CSV exports and Viva Insights data. Tracks active user counts, usage depth, readiness scores, and org-level adoption segmentation across enterprise M365 estates.</p>
         <div class="tool-stack">
           <span class="stack-tag">Power BI</span>
           <span class="stack-tag">Viva Insights</span>
           <span class="stack-tag">M365 Admin API</span>
-          <span class="stack-tag">HTML/JS</span>
         </div>
         <div class="tool-actions">
           <a href="#" class="btn-primary">Learn More →</a>
@@ -635,174 +413,81 @@
   </div>
 </section>
 
-<!-- ═══ BLOG / INSIGHTS ═══════════════════════════════════════ -->
-<section id="blog" aria-label="Blog and Insights">
+<!-- BLOG -->
+<section id="blog">
   <div class="container section-wrap">
     <div class="reveal">
       <p class="section-label">Perspectives &amp; Insights</p>
       <h2 class="section-title">Latest from the Blog</h2>
-      <p class="section-subtitle">
-        Practical perspectives on modern IT operations, workplace technology,
-        and the evolving digital employee experience — from someone who's
-        delivered it at scale.
-      </p>
+      <p class="section-subtitle">Practical perspectives on modern IT operations, workplace technology, and the evolving digital employee experience — from someone who's delivered it at scale.</p>
     </div>
-
     <div class="blog-grid">
 
       <article class="blog-card reveal" data-delay="0">
-        <div class="blog-meta">
-          <span class="blog-tag tag-itsm">ITSM</span>
-          <span class="blog-date">Mar 2025</span>
-        </div>
+        <div class="blog-meta"><span class="blog-tag tag-itsm">ITSM</span><span class="blog-date">Mar 2025</span></div>
         <h3 class="blog-title">Why Your SLAs Are Lying to You — and What XLAs Actually Measure</h3>
-        <p class="blog-excerpt">
-          Response time targets can be green while employees are silently frustrated.
-          Here's why the shift from SLA to XLA is the most important evolution
-          in IT service management in a decade — and how to make the transition.
-        </p>
-        <div class="blog-footer">
-          <span class="read-time">6 min read</span>
-          <span class="blog-arrow">→</span>
-        </div>
+        <p class="blog-excerpt">Response time targets can be green while employees are silently frustrated. Here's why the shift from SLA to XLA is the most important evolution in IT service management — and how to make the transition.</p>
+        <div class="blog-footer"><span class="read-time">6 min read</span><span class="blog-arrow">→</span></div>
       </article>
 
       <article class="blog-card reveal" data-delay="80">
-        <div class="blog-meta">
-          <span class="blog-tag tag-ai">AI &amp; Copilot</span>
-          <span class="blog-date">Feb 2025</span>
-        </div>
+        <div class="blog-meta"><span class="blog-tag tag-ai">AI · Copilot</span><span class="blog-date">Feb 2025</span></div>
         <h3 class="blog-title">M365 Copilot at Scale: Lessons from Enterprise Deployment</h3>
-        <p class="blog-excerpt">
-          Rolling out AI tools to thousands of users isn't a technology problem —
-          it's a behaviour change problem. Here's what actually drives adoption
-          versus what just looks good in a leadership status update.
-        </p>
-        <div class="blog-footer">
-          <span class="read-time">8 min read</span>
-          <span class="blog-arrow">→</span>
-        </div>
+        <p class="blog-excerpt">Rolling out AI tools to thousands of users isn't a technology problem — it's a behaviour change problem. Here's what actually drives adoption versus what just looks good in a status update.</p>
+        <div class="blog-footer"><span class="read-time">8 min read</span><span class="blog-arrow">→</span></div>
       </article>
 
       <article class="blog-card reveal" data-delay="160">
-        <div class="blog-meta">
-          <span class="blog-tag tag-ops">IT Operations</span>
-          <span class="blog-date">Jan 2025</span>
-        </div>
+        <div class="blog-meta"><span class="blog-tag tag-ops">IT Operations</span><span class="blog-date">Jan 2025</span></div>
         <h3 class="blog-title">Building an Incident Intelligence Layer Without Buying More Software</h3>
-        <p class="blog-excerpt">
-          You already have ServiceNow and Nexthink. Here's how to wire them together
-          with Python and ML clustering to detect recurring patterns before your
-          users start filing tickets.
-        </p>
-        <div class="blog-footer">
-          <span class="read-time">10 min read</span>
-          <span class="blog-arrow">→</span>
-        </div>
+        <p class="blog-excerpt">You already have ServiceNow and Nexthink. Here's how to wire them together with Python and ML clustering to detect recurring patterns before your users start filing tickets.</p>
+        <div class="blog-footer"><span class="read-time">10 min read</span><span class="blog-arrow">→</span></div>
       </article>
 
       <article class="blog-card reveal" data-delay="240">
-        <div class="blog-meta">
-          <span class="blog-tag tag-itsm">Quality</span>
-          <span class="blog-date">Dec 2024</span>
-        </div>
+        <div class="blog-meta"><span class="blog-tag tag-itsm">Quality</span><span class="blog-date">Dec 2024</span></div>
         <h3 class="blog-title">CTQ in IT Support: Borrowing from Manufacturing to Fix Ticket Quality</h3>
-        <p class="blog-excerpt">
-          Six Sigma's Critical to Quality concept translates remarkably well to IT
-          support operations. Here's how to build a scoring framework your agents
-          will actually learn from — not just pass an audit on.
-        </p>
-        <div class="blog-footer">
-          <span class="read-time">7 min read</span>
-          <span class="blog-arrow">→</span>
-        </div>
+        <p class="blog-excerpt">Six Sigma's Critical to Quality concept translates remarkably well to IT support operations. Here's how to build a scoring framework your agents will actually learn from.</p>
+        <div class="blog-footer"><span class="read-time">7 min read</span><span class="blog-arrow">→</span></div>
       </article>
 
       <article class="blog-card reveal" data-delay="320">
-        <div class="blog-meta">
-          <span class="blog-tag tag-ai">EUC / Endpoints</span>
-          <span class="blog-date">Nov 2024</span>
-        </div>
+        <div class="blog-meta"><span class="blog-tag tag-ai">EUC · Endpoints</span><span class="blog-date">Nov 2024</span></div>
         <h3 class="blog-title">Intune vs SCCM vs JAMF: Choosing the Right Stack for Your Enterprise</h3>
-        <p class="blog-excerpt">
-          Most teams don't need all three — but knowing when each tool earns its place
-          in the stack is critical. A practical comparison from someone who's run all
-          three in production simultaneously.
-        </p>
-        <div class="blog-footer">
-          <span class="read-time">9 min read</span>
-          <span class="blog-arrow">→</span>
-        </div>
+        <p class="blog-excerpt">Most teams don't need all three — but knowing when each earns its place in the stack is critical. A practical comparison from someone who has run all three in production simultaneously.</p>
+        <div class="blog-footer"><span class="read-time">9 min read</span><span class="blog-arrow">→</span></div>
       </article>
 
       <article class="blog-card reveal" data-delay="400">
-        <div class="blog-meta">
-          <span class="blog-tag tag-ops">Strategy</span>
-          <span class="blog-date">Oct 2024</span>
-        </div>
+        <div class="blog-meta"><span class="blog-tag tag-ops">Strategy</span><span class="blog-date">Oct 2024</span></div>
         <h3 class="blog-title">From Reactive to Proactive: Redesigning the IT Support Model</h3>
-        <p class="blog-excerpt">
-          The 3-tier model was designed for offices, not hybrid work at global scale.
-          A practical blueprint for restructuring support around digital channels,
-          self-service, and proactive delivery — drawn from managing 70K+ endpoints
-          across 140+ countries.
-        </p>
-        <div class="blog-footer">
-          <span class="read-time">7 min read</span>
-          <span class="blog-arrow">→</span>
-        </div>
+        <p class="blog-excerpt">The 3-tier model was designed for offices, not hybrid work at global scale. A practical blueprint for restructuring support around digital channels, self-service, and proactive delivery.</p>
+        <div class="blog-footer"><span class="read-time">7 min read</span><span class="blog-arrow">→</span></div>
       </article>
 
     </div>
   </div>
 </section>
 
-<!-- ═══ CONTACT ═══════════════════════════════════════════════ -->
-<section id="contact" aria-label="Contact">
+<!-- CONTACT -->
+<section id="contact">
   <div class="container section-wrap">
     <div class="reveal" style="text-align:center;margin-bottom:4rem;">
       <p class="section-label" style="justify-content:center;">Let's Connect</p>
       <h2 class="section-title" style="text-align:center;">Got a Challenge to Solve?</h2>
-      <p class="section-subtitle" style="margin:0 auto;">
-        Whether it's an XLA rollout, a quality framework, a tool you need built,
-        or just a conversation about modern workplace IT — reach out.
-      </p>
+      <p class="section-subtitle" style="margin:0 auto;">Whether it's an XLA rollout, a quality framework, a tool you need built, or just a conversation about modern workplace IT — reach out.</p>
     </div>
-
     <div class="contact-inner">
-
       <div class="reveal">
-        <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:1px;text-transform:uppercase;color:var(--text-3);margin-bottom:0.5rem;">Find me on</p>
+        <p style="font-family:var(--font-mono);font-size:.72rem;letter-spacing:1px;text-transform:uppercase;color:var(--text-3);margin-bottom:.5rem;">Find me on</p>
         <ul class="contact-links">
-          <li>
-            <a href="https://linkedin.com/in/yogeshkumar-41933124" target="_blank" rel="noopener">
-              <span class="contact-icon">💼</span>
-              LinkedIn — Yogesh Kumar
-            </a>
-          </li>
-          <li>
-            <a href="mailto:yogeshkumar11@gmail.com">
-              <span class="contact-icon">✉️</span>
-              yogeshkumar11@gmail.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+447448228687">
-              <span class="contact-icon">📞</span>
-              +44 7448 228687
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener">
-              <span class="contact-icon">📄</span>
-              Download CV / Résumé
-            </a>
-          </li>
+          <li><a href="https://linkedin.com/in/yogeshkumar-41933124" target="_blank" rel="noopener"><span class="contact-icon">💼</span>LinkedIn — Yogesh Kumar</a></li>
+          <li><a href="mailto:yogeshkumar11@gmail.com"><span class="contact-icon">✉️</span>yogeshkumar11@gmail.com</a></li>
+          <li><a href="#"><span class="contact-icon">📄</span>Download CV / Résumé</a></li>
         </ul>
-
-        <div style="margin-top:2rem;padding:1.5rem;background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);font-size:0.85rem;color:var(--text-2);">
-          <p style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:0.6rem;">Open to</p>
-          <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;">
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--bg-card);border:1px solid var(--border-card);border-radius:var(--radius);font-size:.85rem;color:var(--text-2);">
+          <p style="font-family:var(--font-mono);font-size:.7rem;color:var(--violet);letter-spacing:1px;text-transform:uppercase;margin-bottom:.6rem;">Open to</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:.4rem;">
             <li>✦ IT Advisory &amp; Consulting engagements</li>
             <li>✦ RFP Design &amp; Solution Architecture</li>
             <li>✦ Speaking at IT &amp; Digital Workplace events</li>
@@ -811,57 +496,39 @@
           </ul>
         </div>
       </div>
-
       <div class="reveal" data-delay="120">
         <form id="contact-form" class="contact-form" novalidate>
           <div class="form-row">
-            <div class="form-group">
-              <label for="cf-name">Name</label>
-              <input type="text" id="cf-name" name="name" placeholder="Jane Smith" required />
-            </div>
-            <div class="form-group">
-              <label for="cf-org">Organisation</label>
-              <input type="text" id="cf-org" name="org" placeholder="Acme Corp" />
-            </div>
+            <div class="form-group"><label for="cf-name">Name</label><input type="text" id="cf-name" name="name" placeholder="Jane Smith" required/></div>
+            <div class="form-group"><label for="cf-org">Organisation</label><input type="text" id="cf-org" name="org" placeholder="Acme Corp"/></div>
           </div>
-          <div class="form-group">
-            <label for="cf-email">Email</label>
-            <input type="email" id="cf-email" name="email" placeholder="jane@acmecorp.com" required />
-          </div>
+          <div class="form-group"><label for="cf-email">Email</label><input type="email" id="cf-email" name="email" placeholder="jane@acmecorp.com" required/></div>
           <div class="form-group">
             <label for="cf-topic">Topic</label>
             <select id="cf-topic" name="topic">
               <option value="">Select a topic...</option>
-              <option value="xla">XLA Programme &amp; Frameworks</option>
-              <option value="ctq">IT Quality &amp; CTQ Auditing</option>
-              <option value="copilot">M365 Copilot Adoption</option>
-              <option value="euc">Endpoint Management Strategy</option>
-              <option value="tool">Custom Tool Development</option>
-              <option value="advisory">General IT Advisory</option>
-              <option value="other">Other</option>
+              <option>XLA Programme &amp; Frameworks</option>
+              <option>IT Quality &amp; CTQ Auditing</option>
+              <option>M365 Copilot Adoption</option>
+              <option>Endpoint Management Strategy</option>
+              <option>Custom Tool Development</option>
+              <option>General IT Advisory</option>
+              <option>Other</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="cf-message">Message</label>
-            <textarea id="cf-message" name="message" placeholder="Tell me about your challenge or what you're looking to achieve..."></textarea>
-          </div>
-          <div class="form-submit">
-            <button type="submit" class="btn-primary">Send Message →</button>
-          </div>
+          <div class="form-group"><label for="cf-message">Message</label><textarea id="cf-message" name="message" placeholder="Tell me about your challenge or what you're looking to achieve..."></textarea></div>
+          <div class="form-submit"><button type="submit" class="btn-primary">Send Message →</button></div>
         </form>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-inner">
-      <p class="footer-copy">
-        © 2025 Yogesh Kumar · Digital Workplace &amp; Infrastructure Leader · Slough, UK
-      </p>
+      <p class="footer-copy">© 2025 Yogesh Kumar · Digital Workplace &amp; Infrastructure Leader · Slough, UK</p>
       <ul class="footer-links">
         <li><a href="#about">About</a></li>
         <li><a href="#frameworks">Frameworks</a></li>
@@ -875,15 +542,14 @@
 
 <script src="assets/js/main.js"></script>
 <script>
-  // Update typed phrases to match real roles
-  window._typedPhrases = [
-    'Service Delivery Manager',
-    'Digital Workplace Architect',
-    'Infrastructure Delivery Leader',
-    'Automation-First IT Leader',
-    'XLA & ITSM Strategist',
-    'EUC & Endpoint Specialist'
-  ];
+window._typedPhrases = [
+  'Service Delivery Manager',
+  'Digital Workplace Architect',
+  'Infrastructure Delivery Leader',
+  'Automation-First IT Leader',
+  'XLA &amp; ITSM Strategist',
+  'EUC &amp; Endpoint Specialist'
+];
 </script>
 </body>
 </html>
